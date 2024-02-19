@@ -1,0 +1,1 @@
+This is a training project on the topic of ForkJoinPool. Where I'm trying to connect to a given web resource and get all existing links that contain the main domain in the name.
