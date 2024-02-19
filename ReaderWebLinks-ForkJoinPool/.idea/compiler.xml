@@ -9,5 +9,8 @@
         <module name="ReaderWebLinks-ForkJoinPool" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ReaderWebLinks-ForkJoinPool" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
