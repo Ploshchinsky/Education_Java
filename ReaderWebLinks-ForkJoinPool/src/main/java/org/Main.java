@@ -11,16 +11,18 @@ public class Main {
     private static final String URL = "https://www.deepl.com/";
 
     public static void main(String[] args) {
-        Document siteDoc = getDocumentFromUrl(URL);
-        String links = elementsToString(siteDoc.select("a"), URL);
-        System.out.println(links);
+//        Document siteDoc = getDocumentFromUrl(URL);
+//        String links = elementsToString(siteDoc.select("a"));
+//        System.out.println(links);
+        LinkCollector linkCollector = new LinkCollector(URL);
+        linkCollector.compute();
     }
 
-    private static String elementsToString(Elements elements, String url) {
+    private static String elementsToString(Elements elements) {
         StringBuffer stringBuffer = new StringBuffer();
         for (Element element : elements) {
             String temp = element.toString();
-            if (temp.contains(url)) {
+            if (temp.contains(URL)) {
                 stringBuffer.append(element.attr("abs:href")).append("\n");
             }
         }
