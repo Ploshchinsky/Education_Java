@@ -29,9 +29,11 @@ public class LinkCollector extends RecursiveTask<List<String>> {
         childLinks = (htmlElements == null) ? null : elementsToList(htmlElements);
 
         if (childLinks == null) {
-            return null;
+            childLinks = new ArrayList<>();
+            childLinks.add("Link - " + MAIN_URL + " return NULL");
+            return childLinks;
         } else if (childLinks.isEmpty()) {
-            childLinks.add(MAIN_URL);
+            childLinks.add(MAIN_URL + "\n");
             return childLinks;
         }
 
@@ -41,7 +43,7 @@ public class LinkCollector extends RecursiveTask<List<String>> {
         childLinksList.forEach(ForkJoinTask::fork);
         childLinksList.stream().map(ForkJoinTask::join).forEach(childLinks::addAll);
 
-        childLinks.add(MAIN_URL);
+        childLinks.add(MAIN_URL + "\n");
         return childLinks;
     }
 
