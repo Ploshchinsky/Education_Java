@@ -8,6 +8,7 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 
 public class LinkCollector extends RecursiveTask<List<String>> {
@@ -22,17 +23,31 @@ public class LinkCollector extends RecursiveTask<List<String>> {
 
     @Override
     protected List<String> compute() {
+        System.out.println("Start - " + Thread.currentThread().getName());
         htmlDoc = getDocumentFromUrl(MAIN_URL);
         htmlElements = (htmlDoc == null) ? null : htmlDoc.select("a");
-        childLinks = elementsToList(htmlElements);
-        if (childLinks.size() <= 1) {
+        childLinks = (htmlElements == null) ? null : elementsToList(htmlElements);
+
+        if (childLinks == null) {
+            return null;
+        } else if (childLinks.isEmpty()) {
+            childLinks.add(MAIN_URL);
             return childLinks;
         }
-        return null;
+
+        List<LinkCollector> childLinksList = new ArrayList<>();
+
+        childLinks.stream().map(LinkCollector::new).forEach(childLinksList::add);
+        childLinksList.forEach(ForkJoinTask::fork);
+        childLinksList.stream().map(ForkJoinTask::join).forEach(childLinks::addAll);
+
+        childLinks.add(MAIN_URL);
+        return childLinks;
     }
 
     private Document getDocumentFromUrl(String url) {
         try {
+            Thread.sleep(160);
             return Jsoup.connect(url)
                     .maxBodySize(0)
                     .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " +
@@ -42,7 +57,11 @@ public class LinkCollector extends RecursiveTask<List<String>> {
                     .followRedirects(true)
                     .get();
         } catch (IOException ex) {
-            System.out.println("File not found. Check URL");
+            System.out.println("File not found. Check URL -> "
+                    + url + " - "
+                    + Thread.currentThread().getName());
+        } catch (InterruptedException ex) {
+            Thread.currentThread().interrupt();
         }
         return null;
     }

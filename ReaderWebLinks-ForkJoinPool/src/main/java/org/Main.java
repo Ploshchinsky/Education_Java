@@ -1,47 +1,29 @@
 package org;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ForkJoinPool;
 
 public class Main {
     private static final String URL = "https://www.deepl.com/";
 
     public static void main(String[] args) {
-//        Document siteDoc = getDocumentFromUrl(URL);
-//        String links = elementsToString(siteDoc.select("a"));
-//        System.out.println(links);
-        LinkCollector linkCollector = new LinkCollector(URL);
-        linkCollector.compute();
+        ForkJoinPool forkJoinPool = new ForkJoinPool();
+        List<String> allLinks = new ArrayList<>(forkJoinPool.invoke(new LinkCollector(URL)));
+        duplicateRemover(allLinks);
     }
 
-    private static String elementsToString(Elements elements) {
-        StringBuffer stringBuffer = new StringBuffer();
-        for (Element element : elements) {
-            String temp = element.toString();
-            if (temp.contains(URL)) {
-                stringBuffer.append(element.attr("abs:href")).append("\n");
+    private static List<String> duplicateRemover(List<String> stringList) {
+        stringList.sort(String::compareTo);
+        String tempString = stringList.get(0);
+        for (int i = 1; i < stringList.size(); i++) {
+            if (tempString.equals(stringList.get(i))) {
+                stringList.remove(i);
+                i--;
+            } else {
+                tempString = stringList.get(i);
             }
         }
-        return stringBuffer.toString();
-    }
-
-    private static Document getDocumentFromUrl(String url) {
-        try {
-            return Jsoup.connect(url)
-                    .maxBodySize(0)
-                    .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " +
-                            "(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36")
-                    .timeout(10_000)
-                    .referrer("https://www.google.com")
-                    .followRedirects(true)
-                    .get();
-        } catch (IOException ex) {
-            System.out.println("File not found. Check URL");
-        }
-        return null;
+        return stringList;
     }
 }
