@@ -1,5 +1,8 @@
 package org;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -9,12 +12,15 @@ import java.util.List;
 import java.util.concurrent.ForkJoinPool;
 
 public class Main {
+    private static final Logger LOGGER = LogManager.getLogger(Main.class);
     private static final String URL = "https://www.deepl.com/";
 
     public static void main(String[] args) {
+        LOGGER.info("App start.... " + Thread.currentThread().getName());
         ForkJoinPool forkJoinPool = new ForkJoinPool();
         List<String> allLinks = new ArrayList<>(forkJoinPool.invoke(new LinkCollector(URL)));
         listToFileWriter(duplicateRemover(allLinks), "DeepL.txt");
+        LOGGER.info("App end ....");
     }
 
     private static List<String> duplicateRemover(List<String> stringList) {
@@ -26,7 +32,7 @@ public class Main {
                 stringList.remove(i);
                 i--;
             } else {
-                duplicateStr = stringList.get(i).replaceAll("\n","");
+                duplicateStr = stringList.get(i).replaceAll("\n", "");
             }
         }
         return stringList;
@@ -45,7 +51,7 @@ public class Main {
             bufferedWriter.flush();
             bufferedWriter.close();
         } catch (IOException ex) {
-            System.out.println("File can't created. Check file name -> " + fileName);
+            LOGGER.error("File can't created. Check file name -> " + fileName);
         }
 
     }

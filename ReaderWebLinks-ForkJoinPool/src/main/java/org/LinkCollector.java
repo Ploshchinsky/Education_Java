@@ -1,5 +1,7 @@
 package org;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -12,6 +14,7 @@ import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 
 public class LinkCollector extends RecursiveTask<List<String>> {
+    private static final Logger LOGGER = LogManager.getLogger(LinkCollector.class);
     private final String MAIN_URL;
     private List<String> childLinks;
     private Document htmlDoc;
@@ -19,11 +22,12 @@ public class LinkCollector extends RecursiveTask<List<String>> {
 
     public LinkCollector(String url) {
         this.MAIN_URL = url;
+        LOGGER.trace("LinkCollector object created in thread - " + Thread.currentThread().getName());
     }
 
     @Override
     protected List<String> compute() {
-        System.out.println("Start - " + Thread.currentThread().getName());
+        LOGGER.debug("\tCompute - " + Thread.currentThread().getName());
         htmlDoc = getDocumentFromUrl(MAIN_URL);
         htmlElements = (htmlDoc == null) ? null : htmlDoc.select("a");
         childLinks = (htmlElements == null) ? null : elementsToList(htmlElements);
@@ -43,6 +47,7 @@ public class LinkCollector extends RecursiveTask<List<String>> {
         childLinksList.forEach(ForkJoinTask::fork);
         childLinksList.stream().map(ForkJoinTask::join).forEach(childLinks::addAll);
 
+        LOGGER.debug("Child Links size - " + childLinks.size());
         childLinks.add(MAIN_URL + "\n");
         return childLinks;
     }
@@ -59,7 +64,7 @@ public class LinkCollector extends RecursiveTask<List<String>> {
                     .followRedirects(true)
                     .get();
         } catch (IOException ex) {
-            System.out.println("File not found. Check URL -> "
+            LOGGER.error("File not found. Check URL -> "
                     + url + " - "
                     + Thread.currentThread().getName());
         } catch (InterruptedException ex) {
