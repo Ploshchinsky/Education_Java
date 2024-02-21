@@ -31,7 +31,7 @@ public class LinkCollector extends RecursiveTask<List<String>> {
 
         htmlDoc = getDocumentFromUrl(MAIN_URL);
         htmlElements = (htmlDoc == null) ? null : htmlDoc.select("a");
-        childLinks = (htmlElements == null) ? null : elementsToList(htmlElements);  
+        childLinks = (htmlElements == null) ? null : elementsToList(htmlElements);
 
         if (childLinks == null) {
             childLinks = new ArrayList<>();
