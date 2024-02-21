@@ -16,7 +16,7 @@ public class Main {
     private static final String URL = "https://www.deepl.com/";
 
     public static void main(String[] args) {
-        LOGGER.info("App start.... " + Thread.currentThread().getName());
+        LOGGER.info("App start.... ");
         ForkJoinPool forkJoinPool = new ForkJoinPool();
         List<String> allLinks = new ArrayList<>(forkJoinPool.invoke(new LinkCollector(URL)));
         listToFileWriter(duplicateRemover(allLinks), "DeepL.txt");

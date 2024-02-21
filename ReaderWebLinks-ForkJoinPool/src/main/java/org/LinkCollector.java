@@ -22,15 +22,16 @@ public class LinkCollector extends RecursiveTask<List<String>> {
 
     public LinkCollector(String url) {
         this.MAIN_URL = url;
-        LOGGER.trace("LinkCollector object created in thread - " + Thread.currentThread().getName());
+        LOGGER.trace("LinkCollector [" + url + "]" + "object created");
     }
 
     @Override
     protected List<String> compute() {
-        LOGGER.debug("\tCompute - " + Thread.currentThread().getName());
+        LOGGER.debug("\tCompute start");
+
         htmlDoc = getDocumentFromUrl(MAIN_URL);
         htmlElements = (htmlDoc == null) ? null : htmlDoc.select("a");
-        childLinks = (htmlElements == null) ? null : elementsToList(htmlElements);
+        childLinks = (htmlElements == null) ? null : elementsToList(htmlElements);  
 
         if (childLinks == null) {
             childLinks = new ArrayList<>();
@@ -47,7 +48,7 @@ public class LinkCollector extends RecursiveTask<List<String>> {
         childLinksList.forEach(ForkJoinTask::fork);
         childLinksList.stream().map(ForkJoinTask::join).forEach(childLinks::addAll);
 
-        LOGGER.debug("Child Links size - " + childLinks.size());
+        LOGGER.debug("Child Links size[" + childLinks.size() + "]");
         childLinks.add(MAIN_URL + "\n");
         return childLinks;
     }

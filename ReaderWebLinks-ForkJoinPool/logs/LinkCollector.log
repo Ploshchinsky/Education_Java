@@ -1,105 +1,155 @@
-20-02-24 18:26:04.258 [main] INFO  org.Main - App start.... main
-20-02-24 18:26:04.260 [main] TRACE org.LinkCollector - LinkCollector object created in thread - main
-20-02-24 18:26:04.260 [ForkJoinPool-1-worker-1] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.136 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.136 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.136 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.136 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.136 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.136 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.137 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.138 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector object created in thread - ForkJoinPool-1-worker-1
-20-02-24 18:26:05.139 [ForkJoinPool-1-worker-2] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-2
-20-02-24 18:26:05.139 [ForkJoinPool-1-worker-3] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-3
-20-02-24 18:26:05.139 [ForkJoinPool-1-worker-4] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-4
-20-02-24 18:26:05.139 [ForkJoinPool-1-worker-5] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-5
-20-02-24 18:26:05.139 [ForkJoinPool-1-worker-6] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-6
-20-02-24 18:26:05.141 [ForkJoinPool-1-worker-7] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-7
-20-02-24 18:26:05.141 [ForkJoinPool-1-worker-8] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-8
-20-02-24 18:26:05.141 [ForkJoinPool-1-worker-9] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-9
-20-02-24 18:26:05.141 [ForkJoinPool-1-worker-10] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-10
-20-02-24 18:26:05.141 [ForkJoinPool-1-worker-11] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-11
-20-02-24 18:26:05.141 [ForkJoinPool-1-worker-12] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-12
-20-02-24 18:26:05.141 [ForkJoinPool-1-worker-13] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-13
-20-02-24 18:26:05.142 [ForkJoinPool-1-worker-14] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-14
-20-02-24 18:26:05.142 [ForkJoinPool-1-worker-15] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-15
-20-02-24 18:26:05.142 [ForkJoinPool-1-worker-16] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-16
-20-02-24 18:26:05.142 [ForkJoinPool-1-worker-17] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-17
-20-02-24 18:26:05.142 [ForkJoinPool-1-worker-18] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-18
-20-02-24 18:26:05.142 [ForkJoinPool-1-worker-19] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-19
-20-02-24 18:26:05.142 [ForkJoinPool-1-worker-20] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-20
-20-02-24 18:26:05.142 [ForkJoinPool-1-worker-21] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-21
-20-02-24 18:26:05.143 [ForkJoinPool-1-worker-23] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-23
-20-02-24 18:26:05.143 [ForkJoinPool-1-worker-22] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-22
-20-02-24 18:26:05.143 [ForkJoinPool-1-worker-24] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-24
-20-02-24 18:26:05.143 [ForkJoinPool-1-worker-25] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-25
-20-02-24 18:26:05.143 [ForkJoinPool-1-worker-26] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-26
-20-02-24 18:26:05.143 [ForkJoinPool-1-worker-27] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-27
-20-02-24 18:26:05.143 [ForkJoinPool-1-worker-28] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-28
-20-02-24 18:26:05.144 [ForkJoinPool-1-worker-30] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-30
-20-02-24 18:26:05.144 [ForkJoinPool-1-worker-32] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-32
-20-02-24 18:26:05.144 [ForkJoinPool-1-worker-29] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-29
-20-02-24 18:26:05.144 [ForkJoinPool-1-worker-31] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-31
-20-02-24 18:26:05.569 [ForkJoinPool-1-worker-22] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-22
-20-02-24 18:26:05.592 [ForkJoinPool-1-worker-32] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-32
-20-02-24 18:26:05.595 [ForkJoinPool-1-worker-6] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-6
-20-02-24 18:26:05.618 [ForkJoinPool-1-worker-29] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-29
-20-02-24 18:26:05.653 [ForkJoinPool-1-worker-16] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-16
-20-02-24 18:26:05.680 [ForkJoinPool-1-worker-19] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-19
-20-02-24 18:26:05.682 [ForkJoinPool-1-worker-17] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-17
-20-02-24 18:26:05.717 [ForkJoinPool-1-worker-14] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-14
-20-02-24 18:26:05.741 [ForkJoinPool-1-worker-12] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-12
-20-02-24 18:26:05.742 [ForkJoinPool-1-worker-30] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-30
-20-02-24 18:26:05.749 [ForkJoinPool-1-worker-18] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-18
-20-02-24 18:26:05.818 [ForkJoinPool-1-worker-9] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-9
-20-02-24 18:26:05.819 [ForkJoinPool-1-worker-4] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-4
-20-02-24 18:26:05.842 [ForkJoinPool-1-worker-8] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-8
-20-02-24 18:26:05.843 [ForkJoinPool-1-worker-10] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-10
-20-02-24 18:26:05.846 [ForkJoinPool-1-worker-24] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-24
-20-02-24 18:26:05.853 [ForkJoinPool-1-worker-26] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-26
-20-02-24 18:26:05.853 [ForkJoinPool-1-worker-15] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-15
-20-02-24 18:26:05.853 [ForkJoinPool-1-worker-25] DEBUG org.LinkCollector - 	Compute - ForkJoinPool-1-worker-25
-20-02-24 18:26:06.317 [ForkJoinPool-1-worker-1] DEBUG org.LinkCollector - Child Links size - 100
-20-02-24 18:26:06.320 [main] INFO  org.Main - App end ....
+21-02-24 14:11:03.538 [main] INFO  org.Main - App start.... main
+21-02-24 14:11:03.540 [main] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/]object created
+21-02-24 14:11:03.541 [ForkJoinPool-1-worker-1] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.452 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/zh
+]object created
+21-02-24 14:11:04.452 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/fr
+]object created
+21-02-24 14:11:04.452 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/zh/en
+]object created
+21-02-24 14:11:04.452 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/bg
+]object created
+21-02-24 14:11:04.452 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/cs
+]object created
+21-02-24 14:11:04.452 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/da
+]object created
+21-02-24 14:11:04.452 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/de
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/el
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/es
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/et
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/fi
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/fr
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/hu
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/id
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/it
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/ja
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/ko
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/lt
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/lv
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/nb
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/nl
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/pl
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/pt
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/ro
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/ru
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/sk
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/sl
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/sv
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/tr
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/uk
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/zh
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator/l/en/ar
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/de/translator
+]object created
+21-02-24 14:11:04.453 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/en/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/es/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/ja/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/fr/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/it/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/id/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/ko/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/nl/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/cs/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/sv/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/pl/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/pt-BR/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/pt-PT/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/ru/translator
+]object created
+21-02-24 14:11:04.454 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/zh/translator
+]object created
+21-02-24 14:11:04.455 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/tr/translator
+]object created
+21-02-24 14:11:04.455 [ForkJoinPool-1-worker-1] TRACE org.LinkCollector - LinkCollector [https://www.deepl.com/uk/translator
+]object created
+21-02-24 14:11:04.455 [ForkJoinPool-1-worker-2] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.456 [ForkJoinPool-1-worker-3] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.456 [ForkJoinPool-1-worker-4] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.456 [ForkJoinPool-1-worker-5] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.457 [ForkJoinPool-1-worker-6] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.457 [ForkJoinPool-1-worker-7] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.457 [ForkJoinPool-1-worker-8] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.457 [ForkJoinPool-1-worker-9] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.457 [ForkJoinPool-1-worker-10] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.457 [ForkJoinPool-1-worker-11] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.458 [ForkJoinPool-1-worker-12] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.458 [ForkJoinPool-1-worker-13] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.458 [ForkJoinPool-1-worker-14] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.458 [ForkJoinPool-1-worker-16] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.458 [ForkJoinPool-1-worker-15] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.458 [ForkJoinPool-1-worker-17] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.459 [ForkJoinPool-1-worker-18] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.459 [ForkJoinPool-1-worker-19] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.459 [ForkJoinPool-1-worker-20] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.459 [ForkJoinPool-1-worker-21] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.459 [ForkJoinPool-1-worker-22] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.459 [ForkJoinPool-1-worker-23] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.459 [ForkJoinPool-1-worker-24] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.459 [ForkJoinPool-1-worker-25] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.460 [ForkJoinPool-1-worker-26] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.460 [ForkJoinPool-1-worker-27] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.460 [ForkJoinPool-1-worker-28] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.460 [ForkJoinPool-1-worker-29] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.460 [ForkJoinPool-1-worker-30] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.460 [ForkJoinPool-1-worker-32] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.460 [ForkJoinPool-1-worker-31] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.822 [ForkJoinPool-1-worker-14] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.830 [ForkJoinPool-1-worker-3] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.831 [ForkJoinPool-1-worker-16] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.835 [ForkJoinPool-1-worker-17] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.842 [ForkJoinPool-1-worker-13] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.842 [ForkJoinPool-1-worker-30] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.848 [ForkJoinPool-1-worker-7] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.853 [ForkJoinPool-1-worker-18] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.853 [ForkJoinPool-1-worker-24] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.860 [ForkJoinPool-1-worker-5] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.862 [ForkJoinPool-1-worker-23] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.870 [ForkJoinPool-1-worker-11] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.871 [ForkJoinPool-1-worker-29] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.873 [ForkJoinPool-1-worker-26] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.873 [ForkJoinPool-1-worker-32] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.879 [ForkJoinPool-1-worker-21] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.880 [ForkJoinPool-1-worker-2] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.880 [ForkJoinPool-1-worker-8] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:04.881 [ForkJoinPool-1-worker-31] DEBUG org.LinkCollector - 	Compute start
+21-02-24 14:11:05.405 [ForkJoinPool-1-worker-1] DEBUG org.LinkCollector - Child Links size[100]
+21-02-24 14:11:05.407 [main] INFO  org.Main - App end ....
