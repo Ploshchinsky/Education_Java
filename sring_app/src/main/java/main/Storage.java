@@ -3,7 +3,6 @@ package main;
 import main.entity.Note;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Storage {
