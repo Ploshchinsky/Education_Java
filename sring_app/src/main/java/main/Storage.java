@@ -36,4 +36,12 @@ public class Storage {
         }
         return -1;
     }
+
+    public static boolean exist(int id) {
+        return noteMap.containsKey(id);
+    }
+
+    public static boolean exist(Note note) {
+        return noteMap.containsValue(note);
+    }
 }
