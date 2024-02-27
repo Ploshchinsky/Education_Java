@@ -1,33 +1,27 @@
 package main;
 
-import main.entity.Note;
+import main.response.Note;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+import java.lang.Integer;
 
 public class Storage {
     private static ConcurrentHashMap<Integer, Note> noteMap = new ConcurrentHashMap<>();
 
     public static int put(Note note) {
-        int id = noteMap.size() + 1;
+        Integer id = noteMap.size() + 1;
         note.setId(id);
         noteMap.put(id, note);
         return id;
     }
 
-    public static ArrayList<Note> list() {
-        return noteMap.isEmpty() ? null : new ArrayList<>(noteMap.values());
+    public static Note get(Integer id) {
+        return noteMap.get(id);
     }
 
-    public static Note get(int id) {
-        return noteMap.getOrDefault(id, null);
-    }
-
-    public static boolean exist(int id) {
-        return noteMap.containsKey(id);
-    }
-
-    public static boolean exist(Note note) {
-        return noteMap.containsValue(note);
+    public static List<Note> list() {
+        return new ArrayList<>(noteMap.values());
     }
 }

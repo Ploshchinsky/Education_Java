@@ -1,30 +1,33 @@
 package main;
 
-import main.entity.Note;
+import main.response.Note;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.lang.Integer;
 
 @RestController
+@RequestMapping("/notes")
 public class NoteController {
-    @PostMapping("/notes/")
-    public int create(Note note) {
+    @PostMapping("/")
+    public int add(Note note) {
         return Storage.put(note);
     }
 
-    @GetMapping("/notes/")
-    public ArrayList<Note> list() {
+    @GetMapping("/")
+    public List<Note> list() {
         return Storage.list();
     }
 
-    @GetMapping("/notes/{id}")
-    public ResponseEntity<Note> get(@PathVariable Integer id) {
+    @GetMapping("/{id}")
+    public ResponseEntity get(@PathVariable int id) {
         Note note = Storage.get(id);
+        System.out.println(note.getId() + " " + note.getText());
         if (note == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
-        return new ResponseEntity<>(note, HttpStatus.OK);
+        return new ResponseEntity(note, HttpStatus.OK);
     }
 }
