@@ -1,4 +1,4 @@
-package main.response;
+package main.model;
 
 import java.lang.Integer;
 
@@ -6,7 +6,7 @@ public class Note {
     private Integer id;
     private String text;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
