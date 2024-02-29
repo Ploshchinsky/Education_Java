@@ -17,12 +17,12 @@ public class NoteController {
 
     @PostMapping("/")
     public ResponseEntity add(Note note) {
-        return new ResponseEntity(Storage.put(note), HttpStatus.CREATED);
+        return new ResponseEntity(noteRepository.save(note).getId(), HttpStatus.CREATED);
     }
 
     @GetMapping("/")
     public List<Note> list() {
-        return Storage.list();
+        return (List<Note>) noteRepository.findAll();
     }
 
     @GetMapping("/{id}")
