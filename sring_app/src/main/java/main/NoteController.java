@@ -27,7 +27,7 @@ public class NoteController {
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable int id) {
-        Note note = Storage.get(id);
+        Note note = noteRepository.findById(id).get();
         return note == null ?
                 ResponseEntity.status(HttpStatus.NOT_FOUND).body(null) :
                 new ResponseEntity(note, HttpStatus.OK);
@@ -35,16 +35,18 @@ public class NoteController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity delete(@PathVariable int id) {
-        Note note = Storage.get(id);
-        return note == null ?
-                ResponseEntity.status(HttpStatus.NOT_FOUND).body(null) :
-                new ResponseEntity(Storage.delete(id), HttpStatus.NO_CONTENT);
+        Note note = noteRepository.findById(id).get();
+        if (note == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
+        noteRepository.delete(note);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }
 
     @PutMapping("/{id}")
     public Note update(@PathVariable int id, Note note) {
         note.setId(id);
-        Storage.put(note);
-        return Storage.get(id);
+        noteRepository.save(note);
+        return noteRepository.findById(note.getId()).get();
     }
 }
