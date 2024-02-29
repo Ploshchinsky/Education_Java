@@ -1,6 +1,8 @@
 package main;
 
 import main.model.Note;
+import main.model.NoteRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +12,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/notes")
 public class NoteController {
+    @Autowired
+    private NoteRepository noteRepository;
+
     @PostMapping("/")
     public ResponseEntity add(Note note) {
         return new ResponseEntity(Storage.put(note), HttpStatus.CREATED);
