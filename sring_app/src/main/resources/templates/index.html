@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #todo-list {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 8px;
+        }
+
+        .task input[type="text"] {
+            flex: 1;
+            margin-right: 8px;
+        }
+
+        .task button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .task button.edit {
+            background-color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+
+<div id="todo-list">
+    <div class="task">
+        <input type="text" value="Do something..." readonly>
+        <button class="add">Добавить</button>
+        <button class="edit">Редактировать</button>
+        <button onclick="removeTask(this)">Удалить</button>
+    </div>
+    <div th:each="note : ${notes}">
+        <a href="#" class="notes-link" th:attr="data-id=note.id" th:text="${note.text}"></a>
+    </div>
+    <!-- Здесь будут добавляться новые задачи -->
+</div>
+<p th:text="${message}"></p>

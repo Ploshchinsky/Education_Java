@@ -1,6 +1,6 @@
 package main;
 
-import main.response.Note;
+import main.model.Note;
 
 import java.util.ArrayList;
 import java.util.List;

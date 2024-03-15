@@ -1,12 +1,20 @@
-package main.response;
+package main.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 import java.lang.Integer;
 
+@Entity
 public class Note {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String text;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
